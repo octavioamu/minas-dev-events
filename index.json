@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Twitter",
+      "title": "MINAS DEV events",
       "styles": {
         "note": {
           "color": "#ffffff",
@@ -41,7 +41,7 @@
                 "width": "35",
                 "height": "35"
               },
-              "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/logo.png"
+              "url": "https://raw.githubusercontent.com/octavioamu/minas-dev-events-app/master/images/minasdev-logo.svg"
             }
           },
           "footer": {
