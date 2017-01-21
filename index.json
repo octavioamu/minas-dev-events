@@ -19,7 +19,7 @@
       },
       "data": {
         "events": [
-        {
+          {
             "name": "FEMUG-MG",
             "date": "2017-01-26",
             "local": {
@@ -28,8 +28,8 @@
             },
             "description": "O FEMUG trata-se de um evento para pessoas interessadas em aprender, evoluir e dividir conhecimentos relacionados a front-end e tecnologias periféricas.",
             "url": "https://goo.gl/YtgxGs"
-        },
-        {
+          },
+          {
             "name": "30º Encontro do IxDA/BH",
             "date": "2017-01-26",
             "local": {
@@ -38,7 +38,8 @@
             },
             "description": "No encontro de janeiro, nossa convidada especial é a Serena Fernandes, e ela vai passar os paranaues da Metodologia Agíl.",
             "url": "https://www.sympla.com.br/30-encontro-do-ixdabh__111634"
-        }]
+          }
+        ]
       },
       "templates": {
         "body": {
@@ -51,152 +52,85 @@
               },
               "url": "https://raw.githubusercontent.com/octavioamu/minas-dev-events-app/master/images/minasdev-logo.png"
             }
-          },
-          "footer": {
-            "tabs": {
-              "style": {
-                "background": "rgba(255,255,255,0.8)",
-                "color": "#009efa"
-              },
-              "items": [{
-                "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/home.png",
-                "text": "Home",
-                "style": {
-                  "height": "21"
-                },
-                "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
-              }, {
-                "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/notifications.png",
-                "text": "Notifications",
-                "style": {
-                  "height": "21"
-                },
-                "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
-              }, {
-                "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/moments.png",
-                "text": "Moments",
-                "style": {
-                  "height": "21"
-                },
-                "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
-              }, {
-                "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/messages.png",
-                "text": "Messages",
-                "style": {
-                  "height": "21"
-                },
-                "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
-              }, {
-                "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/me.png",
-                "text": "Me",
-                "style": {
-                  "height": "21"
-                },
-                "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
-              }]
-            }
-          },
-          "sections": [{
-            "items": {
-              "{{#each events}}": {
-                "type": "horizontal",
-                "style": {
-                  "spacing": "10"
-                },
-                "components": [{
-                  "type": "image",
-                  "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2_400x400.jpeg",
+          }, //header
+          "sections": [
+            {
+              "items": {
+                "{{#each events}}": {
+                  "type": "horizontal",
                   "style": {
-                    "width": "48",
-                    "height": "48",
-                    "corner_radius": "5"
-                  }
-                }, {
-                  "type": "vertical",
-                  "style": {
-                    "spacing": "5"
+                    "spacing": "10"
                   },
-                  "components": [{
-                    "type": "horizontal",
-                    "components": [{
-                      "type": "label",
-                      "text": "ethan",
-                      "style": {
-                        "font": "HelveticaNeue-Bold",
-                        "width": "50",
-                        "size": "14"
-                      }
-                    }, {
-                      "type": "label",
-                      "text": "@gliechtenstein · 8h",
-                      "style": {
-                        "color": "#8899a6",
-                        "size": "13",
-                        "font": "HelveticaNeue"
-                      }
-                    }]
-                  },
-                  {
-                    "type": "label",
-                    "text": "{{name}}",
-                    "style": {
-                      "font": "HelveticaNeue",
-                      "size": "14"
-                    },
-                  },
-                  {
-                    "type": "label",
-                    "text": "{{url}}",
-                    "style": {
-                      "font": "HelveticaNeue",
-                      "size": "14"
-                    },
-                  },
-                  {
-                    "type": "label",
-                    "text": "{{description}}",
-                    "style": {
-                      "font": "HelveticaNeue",
-                      "size": "14"
-                    },
-                  },
-                  {
-                    "type": "label",
-                    "text": "{{date}}",
-                    "style": {
-                      "font": "HelveticaNeue",
-                      "size": "14"
-                    },
-                  },
-                  {
-                    "type": "label",
-                    "text": "{{local.name}}",
-                    "style": {
-                      "font": "HelveticaNeue",
-                      "size": "14"
-                    },
-                  },
-                  {
-                    "type": "label",
-                    "text": "{{local.googlemaps_link}}",
-                    "style": {
-                      "font": "HelveticaNeue",
-                      "size": "14"
-                    },
-                  },
+                  "components": [
                     {
-                    "type": "horizontal",
-                    "style": {
-                      "padding_top": "10"
-                    },
-
-                  }]
-                }]
+                      "type": "vertical",
+                      "style": {
+                        "spacing": "5"
+                      },
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "{{name}}",
+                          "style": {
+                            "font": "HelveticaNeue",
+                            "size": "14"
+                          },
+                        },
+                        {
+                          "type": "label",
+                          "text": "{{url}}",
+                          "style": {
+                            "font": "HelveticaNeue",
+                            "size": "14"
+                          },
+                        },
+                        {
+                          "type": "label",
+                          "text": "{{description}}",
+                          "style": {
+                            "font": "HelveticaNeue",
+                            "size": "14"
+                          },
+                        },
+                        {
+                          "type": "label",
+                          "text": "{{date}}",
+                          "style": {
+                            "font": "HelveticaNeue",
+                            "size": "14"
+                          },
+                        },
+                        {
+                          "type": "label",
+                          "text": "{{local.name}}",
+                          "style": {
+                            "font": "HelveticaNeue",
+                            "size": "14"
+                          },
+                        },
+                        {
+                          "type": "label",
+                          "text": "{{local.googlemaps_link}}",
+                          "style": {
+                            "font": "HelveticaNeue",
+                            "size": "14"
+                          },
+                        },
+                        {
+                          "type": "horizontal",
+                          "style": {
+                            "padding_top": "10"
+                          },
+                        }
+                      ]
+                    }
+                  ]
+                }
               }
             }
-          }]
-        }
-      }
-    }
+          ] //sections
+        } //body
+      } // templates
+    } // head
   }
 }
