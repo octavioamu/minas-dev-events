@@ -189,37 +189,7 @@
                     "style": {
                       "padding_top": "10"
                     },
-                    "components": [{
-                      "type": "image",
-                      "style": {
-                        "height": "20"
-                      },
-                      "url": "https://g.twimg.com/dev/documentation/image/reply-action_0.png"
-                    }, {
-                      "type": "space",
-                      "style": {
-                        "width": "60"
-                      }
-                    }, {
-                      "type": "image",
-                      "style": {
-                        "height": "20"
-                      },
-                      "url": "https://g.twimg.com/dev/documentation/image/retweet-action.png"
-                    }, {
-                      "type": "space",
-                      "style": {
-                        "width": "60"
-                      }
-                    }, {
-                      "type": "image",
-                      "style": {
-                        "height": "20"
-                      },
-                      "url": "https://g.twimg.com/dev/documentation/image/like-action.png"
-                    }, {
-                      "type": "space"
-                    }]
+
                   }]
                 }]
               }
