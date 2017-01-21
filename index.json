@@ -18,18 +18,26 @@
         }
       },
       "data": {
-        "tweets": [{
-          "text": "Animated GIFs are neon signs of the Internet.",
-          "image": "https://pbs.twimg.com/media/Cub2D-vXYAIXFQo.jpg"
-        }, {
-          "text": "I think this is a new feature on Twitter: a push notification for every tweet",
-          "image": "https://pbs.twimg.com/media/CtJYvx1XgAIilZ4.jpg"
-        }, {
-          "text": "Found the most brilliant invention in human history",
-          "image": "https://pbs.twimg.com/media/Cr7cSz1WIAA0OZj.jpg"
-        }, {
-          "text": "Ludlow and Rivington. NOW.",
-          "image": "https://pbs.twimg.com/media/CrNnHPUWEAEK_b3.jpg"
+        "events": [
+        {
+            "name": "FEMUG-MG",
+            "date": "2017-01-26",
+            "local": {
+                "name": "CI&T Belo Horizonte",
+                "googlemaps_link": "https://goo.gl/maps/f9LynEyr2Pr"
+            },
+            "description": "O FEMUG trata-se de um evento para pessoas interessadas em aprender, evoluir e dividir conhecimentos relacionados a front-end e tecnologias periféricas.",
+            "url": "https://goo.gl/YtgxGs"
+        },
+        {
+            "name": "30º Encontro do IxDA/BH",
+            "date": "2017-01-26",
+            "local": {
+                "name": "Hotmart",
+                "googlemaps_link": "https://goo.gl/LOAz4Y"
+            },
+            "description": "No encontro de janeiro, nossa convidada especial é a Serena Fernandes, e ela vai passar os paranaues da Metodologia Agíl.",
+            "url": "https://www.sympla.com.br/30-encontro-do-ixdabh__111634"
         }]
       },
       "templates": {
@@ -90,7 +98,7 @@
           },
           "sections": [{
             "items": {
-              "{{#each tweets}}": {
+              "{{#each events}}": {
                 "type": "horizontal",
                 "style": {
                   "spacing": "10"
@@ -127,21 +135,56 @@
                         "font": "HelveticaNeue"
                       }
                     }]
-                  }, {
+                  },
+                  {
                     "type": "label",
-                    "text": "{{text}}",
+                    "text": "{{name}}",
                     "style": {
                       "font": "HelveticaNeue",
                       "size": "14"
-                    }
-                  }, {
-                    "type": "image",
-                    "url": "{{image}}",
+                    },
+                  },
+                  {
+                    "type": "label",
+                    "text": "{{url}}",
                     "style": {
-                      "width": "100%",
-                      "corner_radius": "5"
-                    }
-                  }, {
+                      "font": "HelveticaNeue",
+                      "size": "14"
+                    },
+                  },
+                  {
+                    "type": "label",
+                    "text": "{{description}}",
+                    "style": {
+                      "font": "HelveticaNeue",
+                      "size": "14"
+                    },
+                  },
+                  {
+                    "type": "label",
+                    "text": "{{date}}",
+                    "style": {
+                      "font": "HelveticaNeue",
+                      "size": "14"
+                    },
+                  },
+                  {
+                    "type": "label",
+                    "text": "{{local.name}}",
+                    "style": {
+                      "font": "HelveticaNeue",
+                      "size": "14"
+                    },
+                  },
+                  {
+                    "type": "label",
+                    "text": "{{local.googlemaps_link}}",
+                    "style": {
+                      "font": "HelveticaNeue",
+                      "size": "14"
+                    },
+                  },
+                    {
                     "type": "horizontal",
                     "style": {
                       "padding_top": "10"
