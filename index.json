@@ -79,80 +79,72 @@
                   },
                   "components": [
                     {
+                      "type": "label",
+                      "text": "{{ date + ' ' + (function(){var d = new Date(date); var day = d.getDay(); var daymap = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']; var realDay = daymap[parseInt(day)]; var h = d.getHours(); var m = d.getMinutes(); var suffix = (h > 11 ? 'pm' : 'am'); var hh = (h > 12 ? h - 12 : h); var mm = (m > 9 ? m : '0'+m); return realDay;})()}}",
+                      "style": {
+                        "font": "HelveticaNeue",
+                        "size": "14"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "{{date}}",
+                      "style": {
+                        "font": "HelveticaNeue",
+                        "size": "18"
+                      }
+                    },
+                    {
                       "type": "vertical",
                       "style": {
                         "spacing": "5"
                       },
                       "components": [
                         {
-                          "type": "label",
-                          "text": "{{ date + ' ' + (function(){var d = new Date(date); var day = d.getDay(); var daymap = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']; var realDay = daymap[parseInt(day)]; var h = d.getHours(); var m = d.getMinutes(); var suffix = (h > 11 ? 'pm' : 'am'); var hh = (h > 12 ? h - 12 : h); var mm = (m > 9 ? m : '0'+m); return realDay;})()}}",
+                          "type": "horizontal",
                           "style": {
-                            "font": "HelveticaNeue",
-                            "size": "14"
-                          }
-                        },
-                        {
-                          "type": "label",
-                          "text": "{{date}}",
-                          "style": {
-                            "font": "HelveticaNeue",
-                            "size": "18"
-                          }
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "spacing": "5"
+                            "distribution": "fill",
+                            "padding": "10",
+                            "spacing": "10"
                           },
                           "components": [
                             {
+                              "type": "label",
+                              "text": "{{name}}",
+                              "style": {
+                                "font": "HelveticaNeue",
+                                "size": "14"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "{{url}}",
+                              "style": {
+                                "font": "HelveticaNeue",
+                                "size": "14"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "{{description}}",
+                              "style": {
+                                "font": "HelveticaNeue",
+                                "size": "14"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "{{local.name}}",
+                              "href": {
+                                "url": "{{local.googlemaps_link}}",
+                                "view": "web"
+                              }
+                            },
+                            {
                               "type": "horizontal",
                               "style": {
-                                "distribution": "fill",
-                                "padding": "10",
-                                "spacing": "10"
-                              },
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "text": "{{name}}",
-                                  "style": {
-                                    "font": "HelveticaNeue",
-                                    "size": "14"
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "{{url}}",
-                                  "style": {
-                                    "font": "HelveticaNeue",
-                                    "size": "14"
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "{{description}}",
-                                  "style": {
-                                    "font": "HelveticaNeue",
-                                    "size": "14"
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "{{local.name}}",
-                                  "href": {
-                                    "url": "{{local.googlemaps_link}}",
-                                    "view": "web"
-                                  }
-                                },
-                                {
-                                  "type": "horizontal",
-                                  "style": {
-                                    "padding_top": "10"
-                                  }
-                                }
-                              ]
+                                "padding_top": "10"
+                              }
                             }
                           ]
                         }
@@ -163,8 +155,8 @@
               }
             }
           ]
-}
-}
-}
-}
+        }
+      }
+    }
+  }
 }
