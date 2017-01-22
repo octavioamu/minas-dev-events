@@ -13,9 +13,6 @@
         "$pull": {
           "trigger": "fetch"
         },
-        "$foreground": {
-          "trigger": "fetch"
-        },
         "$show": {
           "trigger": "fetch"
         },
