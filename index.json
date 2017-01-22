@@ -95,12 +95,11 @@
                         "size": "18"
                       }
                     },
-                    {"type": "horizontal",
-                  "components": [
                     {
                       "type": "vertical",
                       "style": {
-                        "spacing": "5"
+                        "spacing": "5",
+                        "background": "#ffffff"
                       },
                       "components": [
                         {
@@ -143,7 +142,7 @@
                         }
                       ]
                     }
-                  ]}
+
                   ]
                 }
               }
