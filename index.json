@@ -75,36 +75,6 @@
                             "font": "HelveticaNeue",
                             "size": "14"
                           },
-                        },
-                        {
-                          "type": "label",
-                          "text": "{{url}}",
-                          "style": {
-                            "font": "HelveticaNeue",
-                            "size": "14"
-                          },
-                        },
-                        {
-                          "type": "label",
-                          "text": "{{description}}",
-                          "style": {
-                            "font": "HelveticaNeue",
-                            "size": "14"
-                          },
-                        },
-                        {
-                          "type": "label",
-                          "text": "{{date}}",
-                          "style": {
-                            "font": "HelveticaNeue",
-                            "size": "14"
-                          },
-                        },
-                        {
-                          "type": "horizontal",
-                          "style": {
-                            "padding_top": "10"
-                          },
                         }
                       ]
                     }
