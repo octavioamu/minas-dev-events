@@ -15,6 +15,15 @@
           "success": {
             "type": "$reload"
           }
+        },
+        "$load": {
+          "type": "$network.request",
+          "options": {
+            "url": "https://raw.githubusercontent.com/minasdev/minasdev-events/master/events.json"
+          },
+          "success": {
+            "type": "$render"
+          }
         }
       },
       "data": {
@@ -59,7 +68,7 @@
           "sections": [
             {
               "items": {
-                "{{#each events}}": {
+                "{{#each $jason}}": {
                   "type": "horizontal",
                   "style": {
                     "spacing": "10"
