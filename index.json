@@ -11,10 +11,7 @@
       },
       "actions": {
         "$pull": {
-          "type": "$flush",
-          "success": {
-            "type": "$reload"
-          }
+          "trigger": "fetch"
         },
         "$foreground": {
           "trigger": "fetch"
