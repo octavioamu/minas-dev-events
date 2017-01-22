@@ -68,7 +68,7 @@
           "sections": [
             {
               "items": {
-                "{{#each $jason}}": {
+                "{{#each $jason.events}}": {
                   "type": "horizontal",
                   "style": {
                     "spacing": "10"
