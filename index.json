@@ -117,7 +117,7 @@
                         },
                         {
                           "type": "label",
-                          "text": "{{(function(){var d = new Date(date); var day = d.getDay(); var daymap = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; var realDay = daymap[parseInt(day)]; var h = d.getHours(); var m = d.getMinutes(); var suffix = (h > 11 ? 'pm' : 'am'); var hh = (h > 12 ? h - 12 : h); var mm = (m > 9 ? m : '0'+m); return realDay + ' ' + hh + ':' + mm + ' ' + suffix;})()}}",
+                          "text": "{{(function(){var d = new Date(date); var day = d.getDay(); var daymap = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']; var realDay = daymap[parseInt(day)]; var h = d.getHours(); var m = d.getMinutes(); var suffix = (h > 11 ? 'pm' : 'am'); var hh = (h > 12 ? h - 12 : h); var mm = (m > 9 ? m : '0'+m); return realDay;})()}}",
                           "style": {
                             "font": "HelveticaNeue",
                             "size": "14"
