@@ -52,7 +52,7 @@
               },
               "url": "https://raw.githubusercontent.com/octavioamu/minas-dev-events-app/master/images/minasdev-logo.png"
             }
-          }, //header
+          },
           "sections": [
             {
               "items": {
@@ -112,9 +112,9 @@
                 }
               }
             }
-          ] //sections
-        } //body
-      } // templates
-    } // head
+          ]
+        }
+      }
+    }
   }
 }
