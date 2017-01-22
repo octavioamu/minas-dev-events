@@ -101,13 +101,13 @@
                           }
                         },
                         {
-                          "type": "horizontal",
+                          "type": "vertical",
                           "style": {
                             "spacing": "5"
                           },
                           "components": [
                             {
-                              "type": "vertical",
+                              "type": "horizontal",
                               "style": {
                                 "distribution": "fill",
                                 "padding": "10",
