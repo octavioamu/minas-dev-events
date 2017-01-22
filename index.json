@@ -101,7 +101,7 @@
                       },
                       "components": [
                         {
-                          "type": "horizontal",
+                          "type": "vertical",
                           "style": {
                             "distribution": "fill",
                             "padding": "10",
