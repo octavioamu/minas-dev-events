@@ -44,6 +44,9 @@
       "templates": {
         "body": {
           "header": {
+            "style": {
+              "color": "#E64C3B"
+            },
             "title": {
               "type": "image",
               "style": {
