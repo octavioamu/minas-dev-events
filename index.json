@@ -78,6 +78,22 @@
                   },
                   "components": [
                     {
+                      "type": "label",
+                      "text": "{{ date + ' ' + (function(){var d = new Date(date); var day = d.getDay(); var daymap = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']; var realDay = daymap[parseInt(day)]; var h = d.getHours(); var m = d.getMinutes(); var suffix = (h > 11 ? 'pm' : 'am'); var hh = (h > 12 ? h - 12 : h); var mm = (m > 9 ? m : '0'+m); return realDay;})()}}",
+                      "style": {
+                        "font": "HelveticaNeue",
+                        "size": "14"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "{{date}}",
+                      "style": {
+                        "font": "HelveticaNeue",
+                        "size": "14"
+                      }
+                    },
+                    {
                       "type": "vertical",
                       "style": {
                         "spacing": "5"
@@ -102,22 +118,6 @@
                         {
                           "type": "label",
                           "text": "{{description}}",
-                          "style": {
-                            "font": "HelveticaNeue",
-                            "size": "14"
-                          }
-                        },
-                        {
-                          "type": "label",
-                          "text": "{{date}}",
-                          "style": {
-                            "font": "HelveticaNeue",
-                            "size": "14"
-                          }
-                        },
-                        {
-                          "type": "label",
-                          "text": "{{(function(){var d = new Date(date); var day = d.getDay(); var daymap = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']; var realDay = daymap[parseInt(day)]; var h = d.getHours(); var m = d.getMinutes(); var suffix = (h > 11 ? 'pm' : 'am'); var hh = (h > 12 ? h - 12 : h); var mm = (m > 9 ? m : '0'+m); return realDay;})()}}",
                           "style": {
                             "font": "HelveticaNeue",
                             "size": "14"
