@@ -45,7 +45,7 @@
         "body": {
           "header": {
             "style": {
-              "color": "#E64C3B"
+              "background": "#E64C3B"
             },
             "title": {
               "type": "image",
