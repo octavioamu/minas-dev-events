@@ -74,9 +74,27 @@
                 "{{#each $jason.events}}": {
                   "type": "horizontal",
                   "style": {
-                    "spacing": "10"
+                    "spacing": "10",
+                    "background": "#E64C3B"
                   },
+
                   "components": [
+                    {
+                      "type": "label",
+                      "text": "{{ date + ' ' + (function(){var d = new Date(date); var day = d.getDay(); var daymap = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']; var realDay = daymap[parseInt(day)]; var h = d.getHours(); var m = d.getMinutes(); var suffix = (h > 11 ? 'pm' : 'am'); var hh = (h > 12 ? h - 12 : h); var mm = (m > 9 ? m : '0'+m); return realDay;})()}}",
+                      "style": {
+                        "font": "HelveticaNeue",
+                        "size": "14"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "{{date}}",
+                      "style": {
+                        "font": "HelveticaNeue",
+                        "size": "18"
+                      }
+                    },
                     {
                       "type": "vertical",
                       "style": {
@@ -85,7 +103,7 @@
                       "components": [
                         {
                           "type": "label",
-                          "text": "{{ date + ' ' + (function(){var d = new Date(date); var day = d.getDay(); var daymap = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']; var realDay = daymap[parseInt(day)]; var h = d.getHours(); var m = d.getMinutes(); var suffix = (h > 11 ? 'pm' : 'am'); var hh = (h > 12 ? h - 12 : h); var mm = (m > 9 ? m : '0'+m); return realDay;})()}}",
+                          "text": "{{name}}",
                           "style": {
                             "font": "HelveticaNeue",
                             "size": "14"
@@ -93,57 +111,33 @@
                         },
                         {
                           "type": "label",
-                          "text": "{{date}}",
+                          "text": "{{url}}",
                           "style": {
                             "font": "HelveticaNeue",
                             "size": "14"
                           }
                         },
                         {
-                          "type": "vertical",
+                          "type": "label",
+                          "text": "{{description}}",
                           "style": {
-                            "spacing": "5"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "{{name}}",
-                              "style": {
-                                "font": "HelveticaNeue",
-                                "size": "14"
-                              }
-                            },
-                            {
-                              "type": "label",
-                              "text": "{{url}}",
-                              "style": {
-                                "font": "HelveticaNeue",
-                                "size": "14"
-                              }
-                            },
-                            {
-                              "type": "label",
-                              "text": "{{description}}",
-                              "style": {
-                                "font": "HelveticaNeue",
-                                "size": "14"
-                              }
-                            },
-                            {
-                              "type": "label",
-                              "text": "{{local.name}}",
-                              "href": {
-                                "url": "{{local.googlemaps_link}}",
-                                "view": "web"
-                              }
-                            },
-                            {
-                              "type": "horizontal",
-                              "style": {
-                                "padding_top": "10"
-                              }
-                            }
-                          ]
+                            "font": "HelveticaNeue",
+                            "size": "14"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "text": "{{local.name}}",
+                          "href": {
+                            "url": "{{local.googlemaps_link}}",
+                            "view": "web"
+                          }
+                        },
+                        {
+                          "type": "horizontal",
+                          "style": {
+                            "padding_top": "10"
+                          }
                         }
                       ]
                     }
