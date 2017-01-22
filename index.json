@@ -106,17 +106,9 @@
                         {
                           "type": "label",
                           "text": "{{local.name}}",
-                          "style": {
-                            "font": "HelveticaNeue",
-                            "size": "14"
-                          }
-                        },
-                        {
-                          "type": "label",
-                          "text": "{{local.googlemaps_link}}",
-                          "style": {
-                            "font": "HelveticaNeue",
-                            "size": "14"
+                          "href": {
+                            "url": "{{local.googlemaps_link}}",
+                            "view": "web"
                           }
                         },
                         {
