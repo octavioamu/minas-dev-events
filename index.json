@@ -43,10 +43,7 @@
             {
               "items": {
                 "{{#each events}}": {
-                  "type": "horizontal",
-                  "style": {
-                    "spacing": "10"
-                  },
+
                   "components": [
                     {
                       "type": "vertical",
@@ -60,7 +57,7 @@
                           "style": {
                             "font": "HelveticaNeue",
                             "size": "14"
-                          },
+                          }
                         }
                       ]
                     }
