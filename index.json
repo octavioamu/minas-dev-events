@@ -101,48 +101,58 @@
                           }
                         },
                         {
-                          "type": "vertical",
+                          "type": "horizontal",
                           "style": {
                             "spacing": "5"
                           },
                           "components": [
                             {
-                              "type": "label",
-                              "text": "{{name}}",
+                              "type": "vertical",
                               "style": {
-                                "font": "HelveticaNeue",
-                                "size": "14"
-                              }
-                            },
-                            {
-                              "type": "label",
-                              "text": "{{url}}",
-                              "style": {
-                                "font": "HelveticaNeue",
-                                "size": "14"
-                              }
-                            },
-                            {
-                              "type": "label",
-                              "text": "{{description}}",
-                              "style": {
-                                "font": "HelveticaNeue",
-                                "size": "14"
-                              }
-                            },
-                            {
-                              "type": "label",
-                              "text": "{{local.name}}",
-                              "href": {
-                                "url": "{{local.googlemaps_link}}",
-                                "view": "web"
-                              }
-                            },
-                            {
-                              "type": "horizontal",
-                              "style": {
-                                "padding_top": "10"
-                              }
+                                "distribution": "fill",
+                                "padding": "10",
+                                "spacing": "10"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "{{name}}",
+                                  "style": {
+                                    "font": "HelveticaNeue",
+                                    "size": "14"
+                                  }
+                                },
+                                {
+                                  "type": "label",
+                                  "text": "{{url}}",
+                                  "style": {
+                                    "font": "HelveticaNeue",
+                                    "size": "14"
+                                  }
+                                },
+                                {
+                                  "type": "label",
+                                  "text": "{{description}}",
+                                  "style": {
+                                    "font": "HelveticaNeue",
+                                    "size": "14"
+                                  }
+                                },
+                                {
+                                  "type": "label",
+                                  "text": "{{local.name}}",
+                                  "href": {
+                                    "url": "{{local.googlemaps_link}}",
+                                    "view": "web"
+                                  }
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "padding_top": "10"
+                                  }
+                                }
+                              ]
                             }
                           ]
                         }
@@ -153,8 +163,8 @@
               }
             }
           ]
-        }
-      }
-    }
-  }
+}
+}
+}
+}
 }
