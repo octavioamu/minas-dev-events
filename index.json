@@ -94,8 +94,8 @@
                         "font": "HelveticaNeue",
                         "size": "18"
                       }
-                    }
-                  ],
+                    },
+                    {"type": "horizontal",
                   "components": [
                     {
                       "type": "vertical",
@@ -143,6 +143,7 @@
                         }
                       ]
                     }
+                  ]}
                   ]
                 }
               }
