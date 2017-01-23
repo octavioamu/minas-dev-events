@@ -86,6 +86,7 @@
                         {
                           "type": "vertical",
                           "style": {
+                            "color": "#ffffff",
                             "spacing": "5",
                             "distribution": "fill",
                             "background": "#E64C3B"
