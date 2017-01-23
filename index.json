@@ -87,6 +87,7 @@
                           "type": "vertical",
                           "style": {
                             "spacing": "5",
+                            "distribution": "fill",
                             "background": "#E64C3B"
                           },
                           "components": [
@@ -119,9 +120,7 @@
                         {
                           "type": "vertical",
                           "style": {
-                            "distribution": "fill",
                             "padding": "10",
-                            "spacing": "10"
                           },
                           "components": [
                             {
