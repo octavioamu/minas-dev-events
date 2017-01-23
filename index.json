@@ -74,7 +74,9 @@
                 "{{#each $jason.events}}": {
                   "type": "horizontal",
                   "style": {
-                    "spacing": "10"
+                    "spacing": "10",
+                    "distribution": "fill",
+
                   },
                   "components": [
                     {
@@ -88,7 +90,7 @@
                           "style": {
                             "color": "#ffffff",
                             "spacing": "5",
-                            "distribution": "fill",
+                            "distribution": "center",
                             "background": "#E64C3B"
                           },
                           "components": [
